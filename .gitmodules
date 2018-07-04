@@ -1,0 +1,3 @@
+[submodule "STM8-SPL_SDCC_patch"]
+	path = STM8-SPL_SDCC_patch
+	url = https://github.com/gicking/STM8-SPL_SDCC_patch.git

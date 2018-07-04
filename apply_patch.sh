@@ -1,0 +1,1 @@
+STM8-SPL_SDCC_patch/apply_patch.sh
