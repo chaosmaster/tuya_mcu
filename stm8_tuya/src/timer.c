@@ -53,9 +53,8 @@ void TIM1_Config(void)
 
   /* Set the Prescaler value */
   TIM1->PSCRH = (uint8_t)(0x00);
-  TIM1->PSCRL = (uint8_t)(0x10);  // 16
-  //TIM1->PSCRL = (uint8_t)(0x08);  // 16
-  //TIM1->PSCRL = (uint8_t)(0x01);  // 16
+  TIM1->PSCRL = (uint8_t)(0x10 - 1);  // 16 (used value is register + 1)
+  // prescaler on 16 gives 1 tick per us
 
   /* Select the Counter Mode */
   TIM1->CR1 = (uint8_t)((uint8_t)(TIM1->CR1 & (uint8_t)(~(TIM1_CR1_CMS | TIM1_CR1_DIR)))
